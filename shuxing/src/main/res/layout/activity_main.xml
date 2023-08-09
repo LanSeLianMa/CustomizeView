@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <!--  命名空间名称，可以自定义
+          xmlns:myApp="http://schemas.android.com/apk/res-auto"
+
+          <com.test.festec.shuxing.MyAttributeView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                myApp:my_name="张三"
+                myApp:my_age="20"
+                myApp:my_photo="@mipmap/ic_launcher" />
+    -->
+
+    <com.test.festec.shuxing.MyAttributeView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:my_name="张三"
+        app:my_age="20"
+        app:my_photo="@mipmap/ic_launcher" />
+
+</LinearLayout>
