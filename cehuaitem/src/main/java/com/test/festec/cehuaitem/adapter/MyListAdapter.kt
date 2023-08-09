@@ -118,7 +118,6 @@ class MyListAdapter(
         var describeTv: TextView
 
         init {
-
             idTv = itemView.findViewById(R.id.id_tv)
             titleTv = itemView.findViewById(R.id.title_tv)
             describeTv = itemView.findViewById(R.id.describe_tv)
