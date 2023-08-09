@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:text="单个使用"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.test.festec.cehuaitem.widget.SideslipContainer
+        android:id="@+id/sideslip_container01"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:option_width="65dp">
+
+        <com.test.festec.cehuaitem.widget.SideslipContent
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:background="@color/d5"
+                android:paddingTop="20dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:text="content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </com.test.festec.cehuaitem.widget.SideslipContent>
+
+        <com.test.festec.cehuaitem.widget.SideslipOption
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:tag="add"
+            android:text="增加" />
+
+        <com.test.festec.cehuaitem.widget.SideslipOption
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            android:tag="edit"
+            android:text="编辑" />
+
+        <com.test.festec.cehuaitem.widget.SideslipOption
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:tag="delete"
+            android:text="删除" />
+
+    </com.test.festec.cehuaitem.widget.SideslipContainer>
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/container"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"/>-->
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="列表使用" />
+
+</LinearLayout>

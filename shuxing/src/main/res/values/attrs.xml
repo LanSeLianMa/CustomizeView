@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  定义属性集：name：MyAttributeView，通常和绑定View的name一样  -->
+    <declare-styleable name="MyAttributeView">
+        <!-- 属性名称 ... 属性类型   -->
+        <attr name="my_name" format="string"/>
+        <attr name="my_age" format="integer"/>
+        <attr name="my_photo" format="reference|color"/>
+    </declare-styleable>
+    
+</resources>

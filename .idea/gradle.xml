@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/cehuaitem" />
+            <option value="$PROJECT_DIR$/customizebutton" />
+            <option value="$PROJECT_DIR$/inputpopupwindow" />
+            <option value="$PROJECT_DIR$/lunbotu" />
+            <option value="$PROJECT_DIR$/myviewpager" />
+            <option value="$PROJECT_DIR$/shuibowen" />
+            <option value="$PROJECT_DIR$/shuxing" />
+            <option value="$PROJECT_DIR$/youku" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

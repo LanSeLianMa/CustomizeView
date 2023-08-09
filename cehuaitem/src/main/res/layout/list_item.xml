@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/d5"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="69dp">
+
+        <TextView
+            android:id="@+id/id_tv"
+            android:gravity="center"
+            android:background="@color/cardview_dark_background"
+            android:text="0"
+            android:textColor="@color/teal_200"
+            android:textSize="30sp"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:paddingLeft="8dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+
+            <View
+                android:background="@color/dd"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/describe_tv"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/purple_200"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+</LinearLayout>
