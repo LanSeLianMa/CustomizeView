@@ -3,10 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:gravity="center"
     tools:context=".MainActivity">
 
-    <com.test.festec.shuibowen.WaveView
+    <Button
+        android:id="@+id/single_btn"
+        android:text="只显示单个水波纹"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/multiple_btn"
+        android:text="显示多个水波纹"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
