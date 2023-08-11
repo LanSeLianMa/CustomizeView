@@ -9,10 +9,13 @@ import android.os.Handler
 import android.os.Looper
 import android.os.Message
 import android.util.AttributeSet
+import android.util.Log
 import android.view.MotionEvent
 import android.view.View
 import androidx.annotation.RequiresApi
 import com.test.festec.shuibowen.util.DensityUtil
+import java.util.Timer
+import java.util.TimerTask
 
 
 class MultipleWaveView : View {
@@ -31,6 +34,7 @@ class MultipleWaveView : View {
                 }
             }
         }
+
     }
 
     fun updateState(wave: Wave) {
@@ -51,12 +55,9 @@ class MultipleWaveView : View {
         super.onTouchEvent(event)
         when (event?.action) {
             MotionEvent.ACTION_DOWN -> {
-                clearAlpha0Wave()
+                // Log.e("TAG", "size：${waves.size}")
                 waves.add(Wave(downX = event.x, downY = event.y, radioScope = 5))
                 postInvalidate()
-            }
-            MotionEvent.ACTION_UP -> {
-                clearAlpha0Wave()
             }
         }
         return true
@@ -71,6 +72,7 @@ class MultipleWaveView : View {
         // Log.e("TAG", "size：${waves.size}")
     }
 
+    @RequiresApi(Build.VERSION_CODES.N)
     override fun onDraw(canvas: Canvas?) {
         if (waves.isNotEmpty()) {
             handler.removeMessages(0)
@@ -82,6 +84,10 @@ class MultipleWaveView : View {
                         DensityUtil.dp2px(context, it.radioScope.toFloat()).toFloat(),
                         it.paint
                     )
+                } else {
+                    handler.postDelayed(Runnable {
+                        clearAlpha0Wave()
+                    },50)
                 }
             }
             handler.sendEmptyMessageDelayed(0, 50)
